@@ -13,9 +13,11 @@ const configureStore = (preloadedState = {}) => {
   store.subscribe(() => {
     localStorage.state = JSON.stringify(store.getState());
   });
-  store.dispatch((dispatch) => {
-  console.log('If this prints out, the thunk middleware is working!');
-});
+
+//   store.dispatch((dispatch) => {
+//   console.log('If this prints out, the thunk middleware is working!');
+// });
+
   return store;
 };
 

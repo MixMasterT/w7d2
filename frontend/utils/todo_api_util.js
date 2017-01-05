@@ -1,4 +1,4 @@
-$.ajax({
+export const getTodos = () => $.ajax({
   method: 'GET',
   url: 'api/todos',
-}).then((res) => {console.log(res);});
+});
